@@ -100,7 +100,7 @@ for i in "${users[@]}"; do
 		mkdir -p $SFTP_CHROOT/$user
 	fi
 
-	chown root:root $SFTP_CHROOT/$user
+	chown $user:root $SFTP_CHROOT/$user
 	chmod 755 $SFTP_CHROOT/$user
 
 	# Checks if passwords have been set, using

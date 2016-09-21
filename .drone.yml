@@ -1,0 +1,11 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    pull: true
+    debug: true
+    privileged: true
+    repo: arobson/docker-sftp
+    tags:
+      - latest
+    when:
+      branch: master
